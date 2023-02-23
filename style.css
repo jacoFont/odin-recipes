@@ -2,10 +2,34 @@ body {
     background-color: lightgreen;
 }
 
+.background {
+    gap:5px;
+    background-repeat: no-repeat, repeat;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-size: 1920px 1080px;
+    border: 15px double black;
+    text-align: center;
+
+}
+
+.background.cc {
+    background-image: url("../odin-recipes/img/coronation-chicken.jpg");
+}
+
+.background.gs {
+    background-image: url("../odin-recipes/img/gnocchi-sorrentina.jpg");
+}
+
+.background.m {
+    background-image: url("../odin-recipes/img/minestrone.jpg");
+}
+
+
 h1 {
     text-align: center;
     color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Luminari;
     font-size: 70px;
 }
 
@@ -26,6 +50,9 @@ h2 {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis:0;
+    font-size:30px;
+    font-family: Luminari;
+    text-decoration: none;
 }
 
 .container-imgs {
@@ -33,23 +60,23 @@ h2 {
 }
 
 .container-imgs a {
-    flex:1;
+    /*flex:1;*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:0;
 }
 
 
 a {
-    display: inline-block;
     text-align: center;
     font-size: 18px;
     font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration:none;
 }    
 
 
 
-
-
 img {
-    display: block;
     width: 450px;
     height: auto;
     margin-left: auto;
@@ -58,10 +85,10 @@ img {
     
 }
 
+
 img.imgs-index {
-    display: inline;
-    width: 600px;
-    height:1080px;
+    width: 450px;
+    height:900px;
     object-fit: cover;
     border: 3px solid yellow;
     margin-left: 15px;
@@ -71,7 +98,9 @@ img.imgs-index {
 
 img:hover {
     opacity: 100%;
+    zoom:120%;
 }
+
 
 p {
     font-family: "Lucida Console", "Courier New", monospace;
@@ -80,6 +109,7 @@ p {
 
 ol > li , ul > li {
     border: 10px solid transparent;
+    font-size: 20px;
 } 
 
 
