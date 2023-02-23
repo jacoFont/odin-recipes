@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     background-size: 1920px 1080px;
     border: 15px double black;
+    margin:auto;
     text-align: center;
 
 }
