@@ -17,6 +17,7 @@ h2 {
 
 .container-links {
     display: flex;
+    flex-direction: row;
 }
 
 
