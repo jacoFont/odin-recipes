@@ -32,6 +32,7 @@ h1 {
     color: red;
     font-family: Luminari;
     font-size: 70px;
+    margin-top: -15px;
 }
 
 h2 {
@@ -43,6 +44,8 @@ h2 {
 .container-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 }
 
 
@@ -50,26 +53,30 @@ h2 {
     /*flex:1;*/
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis:0;
+    flex-basis:auto;
     font-size:30px;
     font-family: Luminari;
     text-decoration: none;
+    margin-top:auto;
+
 }
 
 .container-imgs {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 .container-imgs a {
-    /*flex:1;*/
     flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis:0;
+    flex-shrink: 10;
+    flex-basis:auto;
+
 }
 
 
 a {
-    text-align: center;
     font-size: 18px;
     font-family: "Lucida Console", "Courier New", monospace;
     text-decoration:none;
@@ -78,28 +85,32 @@ a {
 
 
 img {
+    flex-grow: 1;
+    flex-shrink: 10;
+    flex-basis:auto;
     width: 450px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     border: 10px solid yellow;
+    max-width: 100%;
     
 }
 
 
 img.imgs-index {
-    width: 450px;
-    height:900px;
+    width: 600px;
+    height:800px;
     object-fit: cover;
     border: 3px solid yellow;
-    margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 30%;
     
 }
 
 img:hover {
     opacity: 100%;
-    zoom:120%;
 }
 
 
