@@ -1,11 +1,11 @@
 body {
-    background-color: lightgreen;
+    background-color: rgb(225, 249, 250);
 }
 
 .background {
     gap:5px;
     background-repeat: no-repeat, repeat;
-    background-blend-mode: lighten;
+    background-blend-mode:overlay;
     background-attachment: fixed;
     background-size: 1920px 1080px;
     border: 15px double black;
@@ -30,9 +30,16 @@ body {
 h1 {
     text-align: center;
     color: red;
-    font-family: Luminari;
-    font-size: 70px;
-    margin-top: -15px;
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 60px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 200; 
+    line-height: 26.4px;
+}
+
+h1.title {
+    margin-top: 50px;
 }
 
 h2 {
@@ -140,4 +147,9 @@ ol {
     padding: 0;
     margin: 0;
 
+}
+
+
+.page {
+    margin-top: 100px;
 }
